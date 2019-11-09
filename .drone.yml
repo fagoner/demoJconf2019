@@ -6,4 +6,9 @@ steps:
 - name: show README.md
   image: adoptopenjdk/openjdk8:jdk8u222-b10
   commands:
-  - cat README.mdw
+  - cat README.md
+- name: compile Greet
+  image: adoptopenjdk/openjdk8:jdk8u222-b10
+  commands:
+  - javac Greet.java
+  - ls 
